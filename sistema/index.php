@@ -50,7 +50,7 @@ if(!empty($_POST))
 </head>
 <body>
     <?php
-    require("../plantilla/index.html");
+    require("../plantilla/index.php");
     ?>
     <main>
      <div class="main-content">
