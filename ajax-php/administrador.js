@@ -15,6 +15,7 @@ function recuperar_tareas(){
         success:function(data){
             var lista_actividad=JSON.parse(data);
             var cabecera=`
+
             <div class="main-content">
             <div class="cards">
             <table class="table">

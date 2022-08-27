@@ -75,48 +75,47 @@ if(!empty($_POST['form2']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./line-awesome/css/line-awesome.min.css">
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="styles-responsive.css">
+    
     <title>Panel Admin</title>
     <!--link de iconos de bootrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-    <script>
-        
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    
+    <link rel="stylesheet" href="styles-responsive.css"> 
 </head>
 <body>
+    <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h2> <span class="lab la-accusoft"></span>Sistema contable</h2>
+            <h2> <span class="lab la-accusoft"></span><span>Sistema contable</span></h2>
         </div>
 
         <div class="sidebar-menu">
-            <ul>
+            <ul> 
                 <li>
-                    <a class="nav-link" role="button" id="adm"><span><i class="bi bi-person-square"></i></span>Administrador<span></span></a>
+                    <a href="" id="adm"><span class="las la-user-lock"></span><span>Administrador</span></a>
                 </li>
 
                 <li>
-                    <a class="nav-link" role="button" id="cli"><span class="las la-users"></span>Cliente<span></span></a>
+                    <a href="" id="cli"><span class="las la-users"></span><span>Cliente</span></a>
                 </li>
 
                 <li>
-                    <a href=""><span><i class="bi bi-cash"></i></span>Ingresos<span></span></a>
+                    <a href=""><span class="las la-money-bill-wave"></span><span>Ingresos</span></a>
                 </li>
 
                 <li>
-                    <a href=""><span class="las la-clipboard-list"></span>Egresos<span></span></a>
+                    <a href=""><span class="las la-file-invoice"></span><span>Egresos</span></a>
                 </li>
 
                 <li>
-                    <a href=""><span><i class="bi bi-clipboard2-data-fill"></i></span>Caja<span></span></a>
+                    <a href=""><span class="las la-receipt"></span><span>Caja </span></a>
                 </li>
 
                 <li>
-                    <a href=""><span><i class="bi bi-file-earmark-spreadsheet-fill"></i></span>Reporte<span></span></a>
+                    <a href=""><span class="las la-file-contract"></span><span>Reporte</span></a>
                 </li>
-
                 
             </ul>
         </div>
@@ -125,8 +124,8 @@ if(!empty($_POST['form2']))
     <div class="main-content">
         <header>
             <h2>
-                <label for="">
-                    <!-- <span class="las la-bars"></span> -->
+                <label for="nav-toggle">
+                    <span class="las la-bars" ></span>
                 </label>
 
                 Panel administrador
@@ -142,10 +141,12 @@ if(!empty($_POST['form2']))
             </div>
 
         </header>
+        
     </div>
     <main id="cabecera">
-        
+       
     </main>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../ajax-php/administrador.js"></script>
